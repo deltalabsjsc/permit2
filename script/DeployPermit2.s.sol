@@ -13,7 +13,8 @@ contract DeployPermit2 is Script {
     function run() public returns (Permit2 permit2) {
         vm.startBroadcast();
 
-        permit2 = new Permit2{salt: SALT}();
+        // Must remove salt because Onus chain doesn't support create2 standard
+        permit2 = new Permit2();
         console2.log("Permit2 Deployed:", address(permit2));
 
         vm.stopBroadcast();

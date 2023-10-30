@@ -12,3 +12,7 @@ fs_permissions = [{ access = "read-write", path = ".forge-snapshots/"}]
 [profile.integration]
 no_match_path = ""
 match_path = "*/integration/*"
+
+[etherscan]
+opBnbTestnet = { key = "${ETHERSCAN_API_KEY}", url = "https://api-opbnb-testnet.bscscan.com/api", chain = 5611 }
+onusTestnet = { key = "${ETHERSCAN_API_KEY}", url = "https://explorer-testnet.onuschain.io/api", chain = 1945 }

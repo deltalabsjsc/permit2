@@ -2,3 +2,5 @@
 /cache
 /out
 broadcast/
+/typechain
+/node_modules
